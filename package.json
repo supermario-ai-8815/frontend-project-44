@@ -19,5 +19,8 @@
   "homepage": "https://github.com/supermario-ai-8815/frontend-project-44#readme",
   "bin": {
     "brain-games": "bin/brain-games.js"
+  },
+  "devDependencies": {
+    "@types/readline-sync": "^1.4.8"
   }
 }
