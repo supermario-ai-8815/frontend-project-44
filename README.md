@@ -3,3 +3,7 @@
 
 
 [![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=supermario-ai-8815_frontend-project-44)
+
+
+### Step 5, first game
+[![asciicast](https://asciinema.org/a/Oev80D5PDLcUChNGzGafC7kdt.svg)](https://asciinema.org/a/Oev80D5PDLcUChNGzGafC7kdt)
