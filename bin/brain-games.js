@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 import {name} from '../src/cli.js'
-import {isEven} from '../bin/brain-even.js'
+import {isEven} from '../src/games/brain-even.js'
 
 //console.log('Welcome to the Brain Games!')
 
 console.log(`Hello, ${name}!`)
-console.log('Answer "yes" if the number is even, otherwise answer "no".')
 isEven()

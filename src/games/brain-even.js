@@ -1,10 +1,12 @@
 import readlineSync from 'readline-sync';
-import {name} from '../src/cli.js'
+import {name} from '../cli.js'
 
-
+console.log('Answer "yes" if the number is even, otherwise answer "no".')
 export const isEven = () => {
     const min = 1
-    const max = 150
+    const max = 75
+    const err = 'no'
+    const corr = 'yes'
     for (let i = 0; i < 3; i += 1) {
         let num = Math.floor(Math.random() * (max - min)) + min
         console.log('Question: ' + num)
@@ -13,18 +15,18 @@ export const isEven = () => {
         limit: ['yes', 'no'],
         });
         if (num % 2 === 0) {
-           if (answer === 'yes') {
+           if (answer === corr) {
             console.log('Correct!')
-           } else if (answer === 'no') {
-            console.log(`'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again,${name}!`)
+           } else if (answer === err) {
+            console.log(`'${err}' is wrong answer ;(. Correct answer was '${corr}'.\nLet's try again,${name}!`)
             break
            }
         }
         else {
-            if (answer === 'no') {
+            if (answer === err) {
             console.log('Correct!')
             } else {
-            console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again,${name}!`)
+            console.log(`'${corr}' is wrong answer ;(. Correct answer was '${err}'.\nLet's try again,${name}!`)
             break
             }
         }
@@ -35,3 +37,5 @@ export const isEven = () => {
     }
     
 }
+
+//isEven()
