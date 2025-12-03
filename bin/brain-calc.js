@@ -1,6 +1,7 @@
 
-import { calculator } from '../src/games/calc.js'
 import {name} from '../src/cli.js'
+import { indexDriver } from '../src/index.js'
 
 console.log(`Hello, ${name}!`)
-calculator()
+console.log('What is the result of the expression?')
+indexDriver()

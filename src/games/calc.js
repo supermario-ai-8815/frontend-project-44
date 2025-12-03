@@ -1,25 +1,5 @@
 
-import readlineSync from 'readline-sync'
-import { name } from '../cli.js';
-
-export const calculator = () => {
-    console.log('What is the result of the expression?')
-    for (let i = 0; i < 3; i += 1) {
-        const {expression, correctResult} = generateMathExp()
-        console.log('Question: ' + expression)
-        const answer = readlineSync.questionInt(`Your answer: `)
-        if (answer === correctResult) {
-            console.log('Correct!')
-        }
-        else {
-            console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctResult}'\nLet's try again, ${name}!`)
-            break
-        }
-    }
-}
-
-
-function generateMathExp() {
+export function generateMathExp() {
   const operations = ['+', '-', '*'];
   const operation = operations[Math.floor(Math.random() * operations.length)];
   
@@ -45,7 +25,7 @@ function generateMathExp() {
   }
   
   return {
-    expression: `${min} ${operation} ${max}`,
+    question: `${min} ${operation} ${max}`,
     correctResult: result
   };
 }

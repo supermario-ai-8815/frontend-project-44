@@ -1,45 +1,27 @@
 
 
-// не работает
-
-
+//import {isEven} from '../src/games/brain-even.js'
+import {generateMathExp} from '../src/games/calc.js'
 import readlineSync from 'readline-sync'
-import {name} from './cli.js'
+import {name} from '../src/cli.js'
 
-export const isEven = () => {
-    const min = 1
-    const max = 75
-    const err = 'no'
-    const corr = 'yes'
-    
+export const indexDriver = () => {
+
     for (let i = 0; i < 3; i += 1) {
-        let num = Math.floor(Math.random() * (max - min)) + min
-        console.log('Question: ' + num)
-
-        const answer = readlineSync.question('Your answer: ', {
-        limit: ['yes', 'no'],
-        });
-        if (num % 2 === 0) {
-           if (answer === corr) {
+        const {question, correctResult} = generateMathExp()
+        //const {questionEven, correctResultEven} = isEven()
+        console.log('Question: ' + question)
+        const answer = readlineSync.questionInt(`Your answer: `)
+        if (answer === correctResult) {
             console.log('Correct!')
-           } else if (answer === err) {
-            console.log(`'${err}' is wrong answer ;(. Correct answer was '${corr}'.\nLet's try again,${name}!`)
-            break
-           }
         }
         else {
-            if (answer === err) {
-            console.log('Correct!')
-            } else {
-            console.log(`'${corr}' is wrong answer ;(. Correct answer was '${err}'.\nLet's try again,${name}!`)
+            console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctResult}'\nLet's try again, ${name}!`)
             break
-            }
         }
         if (i === 2) {
         console.log(`Congratulations, ${name}!`)
         break
     }
     }
-    
 }
-
