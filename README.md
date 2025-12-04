@@ -7,3 +7,8 @@
 
 ### Step 5, first game
 [![asciicast](https://asciinema.org/a/Oev80D5PDLcUChNGzGafC7kdt.svg)](https://asciinema.org/a/Oev80D5PDLcUChNGzGafC7kdt)
+
+
+
+### Step 6, calculator and Even games
+[![asciicast](https://asciinema.org/a/KObX9BFtkzsHgLyWvXzHjNGMD.svg)](https://asciinema.org/a/KObX9BFtkzsHgLyWvXzHjNGMD)

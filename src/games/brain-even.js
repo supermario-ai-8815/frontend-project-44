@@ -2,26 +2,22 @@
 export const isEven = () => {
     const min = 1
     const max = 75
-    let num = Math.floor(Math.random() * (max - min)) + min
+    let question = Math.floor(Math.random() * (max - min)) + min
     let result
-        if (num % 2 === 0) {
-            result = true
-            console.log(num + ' Correct!')
+        if (question % 2 === 0) {
+            result = 'yes'
             //запоминаем что сгенерированное число четное
            return {
-            questionEven: num,
-            correctResultEven: result
+            question: `${question}`,
+            correctResult: `${result}`
             };
         }
         else {
-            result = false
-            console.log(num + ' Wrong')
+            result = 'no'
             //запоминаем что сгенерированное число нечетное
             return {
-            questionEven: num,
-            correctResultEven: result
+            question: `${question}`,
+            correctResult: `${result}`
             };
             }
         }
-
-//isEven()

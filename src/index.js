@@ -1,17 +1,15 @@
 
 
-//import {isEven} from '../src/games/brain-even.js'
-import {generateMathExp} from '../src/games/calc.js'
 import readlineSync from 'readline-sync'
 import {name} from '../src/cli.js'
+//import { isEven } from './games/brain-even.js'
 
-export const indexDriver = () => {
+export const indexDriver = (game) => {
 
     for (let i = 0; i < 3; i += 1) {
-        const {question, correctResult} = generateMathExp()
-        //const {questionEven, correctResultEven} = isEven()
+        const {question, correctResult} = game()
         console.log('Question: ' + question)
-        const answer = readlineSync.questionInt(`Your answer: `)
+        const answer = readlineSync.question(`Your answer: `)
         if (answer === correctResult) {
             console.log('Correct!')
         }

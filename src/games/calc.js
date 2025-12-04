@@ -26,6 +26,6 @@ export function generateMathExp() {
   
   return {
     question: `${min} ${operation} ${max}`,
-    correctResult: result
+    correctResult: `${result}`
   };
 }
