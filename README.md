@@ -12,3 +12,7 @@
 
 ### Step 6, calculator and Even games
 [![asciicast](https://asciinema.org/a/KObX9BFtkzsHgLyWvXzHjNGMD.svg)](https://asciinema.org/a/KObX9BFtkzsHgLyWvXzHjNGMD)
+
+
+### Step 7, add greatest common divisor (НОД)
+[![asciicast](https://asciinema.org/a/C1LRunHcICJTvOIJq3jVbDzhA.svg)](https://asciinema.org/a/C1LRunHcICJTvOIJq3jVbDzhA)
