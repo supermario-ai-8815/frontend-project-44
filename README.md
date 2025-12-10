@@ -16,3 +16,7 @@
 
 ### Step 7, add greatest common divisor (НОД)
 [![asciicast](https://asciinema.org/a/C1LRunHcICJTvOIJq3jVbDzhA.svg)](https://asciinema.org/a/C1LRunHcICJTvOIJq3jVbDzhA)
+
+
+### Step 8, add progression game 
+[![asciicast](https://asciinema.org/a/aPLGKvTTgXSEjwbTPOKAaoNpq.svg)](https://asciinema.org/a/aPLGKvTTgXSEjwbTPOKAaoNpq)
