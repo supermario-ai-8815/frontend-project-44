@@ -20,3 +20,7 @@
 
 ### Step 8, add progression game 
 [![asciicast](https://asciinema.org/a/aPLGKvTTgXSEjwbTPOKAaoNpq.svg)](https://asciinema.org/a/aPLGKvTTgXSEjwbTPOKAaoNpq)
+
+### Step 9, add prime game
+[![asciicast](https://asciinema.org/a/h71AzMAyiaTvJDqcjbsJj5CPL.svg)](https://asciinema.org/a/h71AzMAyiaTvJDqcjbsJj5CPL)
+
