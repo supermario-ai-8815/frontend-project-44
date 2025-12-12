@@ -1,8 +1,5 @@
 #!/usr/bin/env node
 import {name} from '../src/cli.js'
-import { isEven } from '../src/games/brain-even.js'
-import { indexDriver } from '../src/index.js'
 
 console.log(`Hello, ${name}!`)
-console.log('Answer "yes" if the number is even, otherwise answer "no".')
-indexDriver(isEven)
+//console.log('Answer "yes" if the number is even, otherwise answer "no".')
