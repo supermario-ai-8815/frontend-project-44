@@ -8,7 +8,7 @@ export const indexDriver = (game) => {
 
     for (let i = 0; i < 3; i += 1) {
         const {question, correctResult} = game()
-        console.log('Question: ' + question)
+        console.log(`Question: ${question}`)
         const answer = readlineSync.question(`Your answer: `)
         if (answer === correctResult) {
             console.log('Correct!')
