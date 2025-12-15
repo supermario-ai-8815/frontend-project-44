@@ -7,17 +7,13 @@ export const isEven = () => {
         if (question % 2 === 0) {
             result = 'yes'
             //запоминаем что сгенерированное число четное
-           return {
-            question: `${question}`,
-            correctResult: `${result}`
-            };
         }
         else {
             result = 'no'
             //запоминаем что сгенерированное число нечетное
-            return {
-            question: `${question}`,
-            correctResult: `${result}`
-            };
             }
+        return {
+        question: `${question}`,
+        correctResult: `${result}`
+        };
         }
