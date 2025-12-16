@@ -7,16 +7,16 @@ export function progression () {
     for (let i = 0; i < length; i += 1) {
         progression.push(num1 + i * step)
     }
-    //console.log(`${progression}`)
+    //console.log(progression.join(' '))
     let point = ".."
-    let currentPoint = Math.floor(Math.random() * 8) + 1
+    let currentPoint = Math.floor(Math.random() * 10) + 1
     let result = progression[currentPoint]
     progression[currentPoint] = currentPoint
     progression[currentPoint] = `${point}`
     //console.log(`${progression}`)
     //console.log(`${result}`)
     return {
-        question: progression,
+        question: progression.join(' '),
         correctResult: `${result}`
     }
     
