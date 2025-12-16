@@ -23,9 +23,10 @@ export function generateMathExp() {
       result = min * max;
       break;
   }
-  
+  let minNum = Number(min)
+  let maxNum = Number(max)
   return {
-    question: `${min} ${operation} ${max}`,
+    question: `${minNum} ${operation} ${maxNum}`,
     correctResult: `${result}`
   };
 }
