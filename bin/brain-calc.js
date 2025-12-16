@@ -1,4 +1,4 @@
-
+#!/usr/bin/env node
 import {name} from '../src/cli.js'
 import { generateMathExp } from '../src/games/calc.js'
 import { indexDriver } from '../src/index.js'

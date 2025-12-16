@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import {name} from '../src/cli.js'
 import { isEven } from '../src/games/even.js'
 import { indexDriver } from '../src/index.js'

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import {name} from '../src/cli.js'
 import { progression } from '../src/games/progress.js'
 import { indexDriver } from '../src/index.js'
