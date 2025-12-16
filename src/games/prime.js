@@ -1,35 +1,47 @@
 
-export function isPrime () {
-  let num = Math.floor(Math.random() * 100) + 1
-  if (num <= 1) return {
-    correctResult: 'no',
-    question: `${num}`
-  } // 0, 1 и отрицательные не простые
+function getAnswerOfPrime (num) {
+  //const num = Math.floor(Math.random() * 100) + 1
+  //let result
+  if (num <= 1) {
+    return false
+    
+  }
 
-  if (num <= 3) {
-    return {
-    correctResult: 'yes',
-    question: `${num}`  // 2 и 3 простые
-  }}
+  else if (num === 2) {
+    return true
+  }
   // Исключаем четные числа и кратные 3
-  if (num % 2 === 0 || num % 3 === 0) {
-    return {
-    correctResult: 'no',
-    question: `${num}`
-  }}
+  else if (num % 2 === 0) {
+    return false
+  }
   
   // Проверяем делители от 5 до √num
   // Используем шаг 6 (оптимизация)
-  for (let i = 5; i * i <= num; i += 6) {
-    if (num % i === 0 || num % (i + 2) === 0) {
-      return {
-        correctResult: 'no',
-        question: `${num}`
-  }};
-  
-  return true;
-}
+  for (let i = 3; i <= Math.sqrt(num); i += 2) {
+    if (num % i === 0) {
+    return false
+    };
+  }
+    return true
+
 }
 
 //isPrime()
+
+export function isPrime () {
+const num = Math.floor(Math.random() * 100) + 1
+const isPrimeNum = getAnswerOfPrime(num)
+
+let result
+if (isPrimeNum) {
+result = 'yes'
+} else {
+  result = 'no'
+}
+return {
+        question: `${num}`,
+        correctResult: `${result}`
+        };
+}
+
 
