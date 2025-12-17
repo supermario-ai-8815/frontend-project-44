@@ -1,10 +1,8 @@
-
-function getAnswerOfPrime (num) {
-  //const num = Math.floor(Math.random() * 100) + 1
-  //let result
+function getAnswerOfPrime(num) {
+  // const num = Math.floor(Math.random() * 100) + 1
+  // let result
   if (num <= 1) {
     return false
-    
   }
 
   else if (num === 2) {
@@ -14,34 +12,32 @@ function getAnswerOfPrime (num) {
   else if (num % 2 === 0) {
     return false
   }
-  
+
   // Проверяем делители от 5 до √num
   // Используем шаг 6 (оптимизация)
   for (let i = 3; i <= Math.sqrt(num); i += 2) {
     if (num % i === 0) {
-    return false
+      return false
     };
   }
-    return true
-
+  return true
 }
 
-//isPrime()
+// isPrime()
 
-export function isPrime () {
-const num = Math.floor(Math.random() * 100) + 1
-const isPrimeNum = getAnswerOfPrime(num)
+export function isPrime() {
+  const num = Math.floor(Math.random() * 100) + 1
+  const isPrimeNum = getAnswerOfPrime(num)
 
-let result
-if (isPrimeNum) {
-result = 'yes'
-} else {
-  result = 'no'
+  let result
+  if (isPrimeNum) {
+    result = 'yes'
+  }
+  else {
+    result = 'no'
+  }
+  return {
+    question: `${num}`,
+    correctResult: `${result}`,
+  }
 }
-return {
-        question: `${num}`,
-        correctResult: `${result}`
-        };
-}
-
-

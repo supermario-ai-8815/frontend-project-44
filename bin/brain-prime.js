@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import {name} from '../src/cli.js'
+import { name } from '../src/cli.js'
 import { isPrime } from '../src/games/prime.js'
 import { indexDriver } from '../src/index.js'
 
