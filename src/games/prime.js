@@ -1,6 +1,4 @@
 function getAnswerOfPrime(num) {
-  // const num = Math.floor(Math.random() * 100) + 1
-  // let result
   if (num <= 1) {
     return false
   }
@@ -22,8 +20,6 @@ function getAnswerOfPrime(num) {
   }
   return true
 }
-
-// isPrime()
 
 export function isPrime() {
   const num = Math.floor(Math.random() * 100) + 1
